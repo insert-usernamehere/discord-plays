@@ -10,6 +10,7 @@ from pynput.mouse import Button, Controller
 
 
 #this file stores all the key inputs that make this work, you ususally don't have to edit this program unless you have a weird keyboard.
+# credit to https://www.dougdougw.com/twitch-plays-code/twitchplays-py for the directx code and fuctions
 Q = 0x10
 W = 0x11
 E = 0x12
