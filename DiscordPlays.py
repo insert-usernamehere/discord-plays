@@ -10,7 +10,7 @@ import discord
 from discord.ext import commands
 try:
     from key import *
-except Exception:
+except:
     print("failed to load key.py any attempt to run a session will result in a crash")
 
 
@@ -55,7 +55,7 @@ async def start(ctx):
                 global dpch
                 dpch = ctx.channel.id
                 await ctx.send("discord plays started any commands sent in this channel will be recorded as a key press")
-            except Exception:
+            except:
                 await ctx.send("an error occured, this probably was caused because I'm already in a vc or I can't join one")
         else:
             await ctx.send("you must be in a vc to start discord plays")
@@ -69,7 +69,7 @@ async def stop(ctx):
             global dpch
             dpch = 0000000000000000
             await ctx.send("discord plays stopped")
-        except Exception:
+        except:
             await ctx.send("an error occured, this probably was caused because I'm not in a vc")
 
 
